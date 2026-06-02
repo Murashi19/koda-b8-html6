@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Navigation Bar</title>
+		<style>
+			body {
+				margin: 0;
+				width: 100%;
+				min-height: 100vh;
+			}
+			.nav {
+				background-color: gray;
+				height: 50px;
+				width: 100%;
+			}
+			.logo {
+				display: inline-block;
+				margin-left: 30px;
+				color: white;
+				margin-right: 100px;
+				margin-bottom: 20px;
+			}
+			ul {
+				display: inline-block;
+				margin: 20px 100px;
+				padding: 0;
+			}
+
+			ul > li,
+			.navbar {
+				display: inline-block;
+				margin-right: 50px;
+				color: white;
+			}
+
+			.right {
+				float: right;
+				margin-right: 30px;
+				margin-top: 15px;
+			}
+
+			.login,
+			.signup {
+				width: 40px;
+				height: 40px;
+				margin-right: 10px;
+				border-radius: 10px;
+				background-color: white;
+			}
+
+			@media (max-width: 768px) {
+				.nav {
+					width: 100%;
+					height: auto;
+					padding: 10px 0;
+					overflow: visible;
+				}
+
+				.logo {
+					display: block;
+					text-align: center;
+					line-height: normal;
+					padding: 20px 12px 12px 12px;
+					margin: 0;
+				}
+
+				ul {
+					display: block;
+					line-height: normal;
+					text-align: center;
+					padding: 0 2px;
+					list-style-type: none;
+				}
+
+				ul li {
+					display: block;
+					margin-right: 0;
+					margin-left: 0;
+					margin-bottom: 12px;
+				}
+
+				.right {
+					display: block;
+					float: none;
+					margin: 12px;
+					line-height: normal;
+				}
+
+				.right button {
+					display: block;
+					margin-bottom: 8px;
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="logo">Wirey</div>
+			<ul>
+				<li>Home</li>
+				<li>Shop</li>
+				<li>Blog</li>
+				<li>About</li>
+			</ul>
+
+			<div class="right">
+				<button class="Login">Login</button>
+				<button class="Signup">Sign Up</button>
+			</div>
+		</div>
+	</body>
+</html>
